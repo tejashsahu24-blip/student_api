@@ -5,4 +5,8 @@ DATABASE_URL = "mysql+pymysql://root:@localhost/student_db"
 
 engine = create_engine(DATABASE_URL)
 
-SessionLocal = sessionmaker(bind=engine)
+SessionLocal = sessionmaker(
+    autocommit=False,
+    autoflush=False,
+    bind=engine
+)
