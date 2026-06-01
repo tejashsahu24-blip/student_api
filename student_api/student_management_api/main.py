@@ -7,4 +7,4 @@ app.include_router(router)
 
 @app.get("/")
 def home():
-    return {"message": "Student API Running"}
+    return {"message": "Student Management API"}
